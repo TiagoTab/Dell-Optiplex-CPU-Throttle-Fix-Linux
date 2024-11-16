@@ -9,6 +9,7 @@
 #
 ###############################################################################
 
+sudo modprobe msr
 
 #segmentation fault without previous commands
 
