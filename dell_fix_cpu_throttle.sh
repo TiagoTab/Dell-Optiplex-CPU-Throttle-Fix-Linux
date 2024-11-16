@@ -9,7 +9,10 @@
 #
 ###############################################################################
 
+
+#segmentation fault without previous commands
+
 # This program should live in /usr/local/sbin
 
-wrmsr -a 0x1a0 0x850089
-echo 0 | tee /sys/devices/system/cpu/intel_pstate/no_turbo
+sudo wrmsr -a 0x1a0 0x850089
+sudo echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
